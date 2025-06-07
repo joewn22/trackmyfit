@@ -10,7 +10,7 @@ interface AuthProviderType {
 }
 
 interface TextInputProps {
-	value: string;
+	value?: string;
 	label?: string;
 	placeholder: string;
 	readonly?: boolean;
@@ -22,6 +22,23 @@ interface ButtonProps {
 	title: string;
 	onClick: () => void;
 	ghost?: boolean;
+}
+
+interface PhoneNumberInputProps {
+	value?: string;
+	onValueChange: (text: string) => void;
+	ghost?: boolean;
+	code?: CountryCode;
+}
+
+interface RequiredTextViewProps {
+	text: string;
+	centered?: boolean;
+}
+
+interface LoginDataProps {
+	email?: string;
+	phone?: string;
 }
 
 type LoginSwitch = "phone" | "email";

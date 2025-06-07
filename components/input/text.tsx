@@ -10,12 +10,12 @@ const CTextInput = ({
 	return (
 		<View className="flex flex-col w-[100%] gap-1 items-center">
 			<TextInput
-				className="w-[90%] p-3 border border-1 rounded-md border-[#D5D6D7]"
+				className="w-[90%] h-[50px] bg-white/10 p-3 border border-1 rounded-md border-[#D5D6D7]"
 				onChangeText={onValueChange}
 				value={value}
 				placeholder={placeholder}
 				placeholderTextColor={Colors.offWhite}
-				style={{ fontSize: 12 }}
+				style={{ fontSize: 12, color: "white" }}
 			/>
 		</View>
 	);

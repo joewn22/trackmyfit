@@ -13,7 +13,7 @@ function useProtectedRoute(user: User | undefined) {
 		const inAuthGroup =
 			segments.length > 0 && segments[0]?.startsWith("(auth)");
 
-		router.replace("/login");
+		router.replace("/(auth)/login");
 	}, []);
 }
 

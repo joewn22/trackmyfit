@@ -20,6 +20,10 @@ const RootLayout = () => {
 			<ThemeProvider value={DefaultTheme}>
 				<Stack>
 					<Stack.Screen name="(auth)/login" options={{ headerShown: false }} />
+					<Stack.Screen
+						name="(auth)/signup/about-user"
+						options={{ headerShown: false }}
+					/>
 					<Stack.Screen name="+not-found" />
 				</Stack>
 				<StatusBar style="auto" />
