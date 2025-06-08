@@ -41,4 +41,24 @@ interface LoginDataProps {
 	phone?: string;
 }
 
+interface DropDownArray {
+	label: string;
+	value: string;
+}
+
+interface DropDownProps {
+	items: DropDownArray[];
+	open: boolean;
+	setOpen: () => void;
+	value: string | number | null;
+	setValue: React.Dispatch<React.SetStateAction<string | number | null>>;
+	placeholder: string;
+}
+
+interface DOBInputProps {
+	date: Date | null;
+	setDate: (date: Date) => void;
+	placeholder: string;
+}
+
 type LoginSwitch = "phone" | "email";

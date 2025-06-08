@@ -9,7 +9,7 @@ const CButton = ({ title, onClick }: ButtonProps) => {
 				style={styles.button}
 				onPress={onClick}
 			>
-				<Text className="text-white font-medium">{title}</Text>
+				<Text className="text-white font-medium text-[14px]">{title}</Text>
 			</TouchableOpacity>
 		</View>
 	);

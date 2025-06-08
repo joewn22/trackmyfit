@@ -8,6 +8,7 @@
         "@hookform/resolvers": "^5.0.1",
         "@hugeicons/core-free-icons": "^1.0.14",
         "@hugeicons/react-native": "^1.0.7",
+        "@react-native-community/datetimepicker": "^8.4.1",
         "@react-navigation/bottom-tabs": "^7.3.10",
         "@react-navigation/elements": "^2.3.8",
         "@react-navigation/native": "^7.1.6",
@@ -34,6 +35,8 @@
         "react-dom": "19.0.0",
         "react-hook-form": "^7.57.0",
         "react-native": "0.79.2",
+        "react-native-date-picker": "^5.0.13",
+        "react-native-dropdown-picker": "^5.4.6",
         "react-native-gesture-handler": "~2.24.0",
         "react-native-phone-number-input": "^2.1.0",
         "react-native-reanimated": "3.16.2",
@@ -435,6 +438,8 @@
     "@react-native-community/cli-tools": ["@react-native-community/cli-tools@18.0.0", "", { "dependencies": { "@vscode/sudo-prompt": "^9.0.0", "appdirsjs": "^1.2.4", "chalk": "^4.1.2", "execa": "^5.0.0", "find-up": "^5.0.0", "launch-editor": "^2.9.1", "mime": "^2.4.1", "ora": "^5.4.1", "prompts": "^2.4.2", "semver": "^7.5.2" } }, "sha512-oR6FcDEcSDYos79vZy4+Tj8jgAE0Xf5HEiRXMJFGISYLRx7tvslSaK8SodUOW9TZe2bCZOb5QSvj8zeMpORmxg=="],
 
     "@react-native-community/cli-types": ["@react-native-community/cli-types@18.0.0", "", { "dependencies": { "joi": "^17.2.1" } }, "sha512-J84+4IRXl8WlVdoe1maTD5skYZZO9CbQ6LNXEHx1kaZcFmvPZKfjsaxuyQ+8BsSqZnM2izOw8dEWnAp/Zuwb0w=="],
+
+    "@react-native-community/datetimepicker": ["@react-native-community/datetimepicker@8.4.1", "", { "dependencies": { "invariant": "^2.2.4" }, "peerDependencies": { "expo": ">=52.0.0", "react": "*", "react-native": "*", "react-native-windows": "*" }, "optionalPeers": ["expo", "react-native-windows"] }, "sha512-DrK+CUS5fZnz8dhzBezirkzQTcNDdaXer3oDLh0z4nc2tbdIdnzwvXCvi8IEOIvleoc9L95xS5tKUl0/Xv71Mg=="],
 
     "@react-native/assets-registry": ["@react-native/assets-registry@0.79.2", "", {}, "sha512-5h2Z7/+/HL/0h88s0JHOdRCW4CXMCJoROxqzHqxdrjGL6EBD1DdaB4ZqkCOEVSW4Vjhir5Qb97C8i/MPWEYPtg=="],
 
@@ -1603,6 +1608,10 @@
     "react-native-country-picker-modal": ["react-native-country-picker-modal@2.0.0", "", { "dependencies": { "@callstack/react-theme-provider": "3.0.3", "fuse.js": "3.4.5", "modal-react-native-web": "0.2.0", "node-emoji": "1.10.0", "prop-types": "15.7.2", "react-async-hook": "3.6.1" }, "peerDependencies": { "react": "*", "react-dom": "*", "react-native": "*", "react-native-web": "*" } }, "sha512-p0wfkKx1mOCEkn3Qm2/FA8TrxSdUw/nqaCcT6KYvIGmPtPdia1Ce+iWh5G0j2hZcDs6yJSkYAx+7lrZ0HwixAw=="],
 
     "react-native-css-interop": ["react-native-css-interop@0.1.22", "", { "dependencies": { "@babel/helper-module-imports": "^7.22.15", "@babel/traverse": "^7.23.0", "@babel/types": "^7.23.0", "debug": "^4.3.7", "lightningcss": "^1.27.0", "semver": "^7.6.3" }, "peerDependencies": { "react": ">=18", "react-native": "*", "react-native-reanimated": ">=3.6.2", "tailwindcss": "~3" } }, "sha512-Mu01e+H9G+fxSWvwtgWlF5MJBJC4VszTCBXopIpeR171lbeBInHb8aHqoqRPxmJpi3xIHryzqKFOJYAdk7PBxg=="],
+
+    "react-native-date-picker": ["react-native-date-picker@5.0.13", "", { "peerDependencies": { "react": ">= 17.0.1", "react-native": ">= 0.64.3" } }, "sha512-qCLUODZVsJetO5zuoXjw1D39K527XWqBG8sOfhWdHyPzf13h8RXR1/RSKd1N0fdRDi5GdyizYmB0lPAK12/hbw=="],
+
+    "react-native-dropdown-picker": ["react-native-dropdown-picker@5.4.6", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-T1XBHbE++M6aRU3wFYw3MvcOuabhWZ29RK/Ivdls2r1ZkZ62iEBZknLUPeVLMX3x6iUxj4Zgr3X2DGlEGXeHsA=="],
 
     "react-native-edge-to-edge": ["react-native-edge-to-edge@1.6.0", "", { "peerDependencies": { "react": "*", "react-native": "*" } }, "sha512-2WCNdE3Qd6Fwg9+4BpbATUxCLcouF6YRY7K+J36KJ4l3y+tWN6XCqAC4DuoGblAAbb2sLkhEDp4FOlbOIot2Og=="],
 

@@ -1,4 +1,6 @@
 import Colors from "@/constants/colors";
+import { ArrowDown01Icon } from "@hugeicons/core-free-icons";
+import { HugeiconsIcon } from "@hugeicons/react-native";
 import React, { useRef, useState } from "react";
 import { StyleSheet, View } from "react-native";
 import PhoneInput from "react-native-phone-number-input";
@@ -27,7 +29,6 @@ const PhoneNumberInput = ({
 					setFormattedValue(text);
 				}}
 				onChangeCountry={(country) => {}}
-				autoFocus
 				containerStyle={styles.containerStyle}
 				textContainerStyle={styles.textContainerStyle}
 				textInputStyle={styles.textInputStyle}
@@ -37,6 +38,9 @@ const PhoneNumberInput = ({
 					placeholderTextColor: Colors.lightGrey,
 					cursorColor: Colors.offWhite,
 				}}
+				renderDropdownImage={
+					<HugeiconsIcon icon={ArrowDown01Icon} color="white" />
+				}
 			/>
 		</View>
 	);
@@ -63,8 +67,8 @@ const styles = StyleSheet.create({
 		borderRadius: 4,
 		padding: 0,
 		width: "90%",
-		height: 45,
-		backgroundColor: "transparent",
+		height: 50,
+		backgroundColor: "#FFFFFF1A",
 	},
 });
 

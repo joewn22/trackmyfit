@@ -1,6 +1,6 @@
 import Texture from "@/components/background/texture";
+import AuthNav from "@/components/clickable/auth-nav";
 import CButton from "@/components/clickable/button";
-import LoginNav from "@/components/clickable/login-nav";
 import PhoneNumberInput from "@/components/input/phone-number";
 import CTextInput from "@/components/input/text";
 import InlineError from "@/components/label/inline-error";
@@ -139,7 +139,11 @@ const Login = () => {
 						</View>
 						<View className="w-full flex items-center mt-5 gap-5">
 							<CButton title="Login" onClick={handleSubmit(handleLogin)} />
-							<LoginNav navlabel="Sign up" question="Don’t have an account?" />
+							<AuthNav
+								navlabel="Sign up"
+								question="Don’t have an account?"
+								onClick={() => router.push("/(auth)/signup/about-user")}
+							/>
 						</View>
 					</View>
 				</ImageBackground>

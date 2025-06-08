@@ -24,6 +24,14 @@ const RootLayout = () => {
 						name="(auth)/signup/about-user"
 						options={{ headerShown: false }}
 					/>
+					<Stack.Screen
+						name="(auth)/signup/otp"
+						options={{ headerShown: false }}
+					/>
+					<Stack.Screen
+						name="(auth)/signup/fitness-level"
+						options={{ headerShown: false }}
+					/>
 					<Stack.Screen name="+not-found" />
 				</Stack>
 				<StatusBar style="auto" />
